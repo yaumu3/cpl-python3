@@ -25,15 +25,25 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :warning: cpl/graph/__init__.py
+# :heavy_check_mark: cpl/graph/__init__.py
 
 <a href="../../../index.html">Back to top page</a>
 
 * category: <a href="../../../index.html#05f98b83664ba3f3f99f8f8001fd60c2">cpl/graph</a>
 * <a href="{{ site.github.repository_url }}/blob/master/cpl/graph/__init__.py">View this file on GitHub</a>
-    - Last commit date: 2020-09-11 20:57:04+09:00
+    - Last commit date: 2020-09-11 22:03:00+09:00
 
 
+
+
+## Depends on
+
+* :warning: <a href="shortest_path.py.html">cpl/graph/shortest_path.py</a>
+
+
+## Verified with
+
+* :heavy_check_mark: <a href="../../../verify/tests/graph/shortest_path.test.py.html">tests/graph/shortest_path.test.py</a>
 
 
 ## Code
@@ -41,6 +51,9 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
+from cpl.graph.shortest_path import Dijkstra
+
+__all__ = ["Dijkstra"]
 
 ```
 {% endraw %}

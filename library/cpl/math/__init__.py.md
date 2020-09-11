@@ -31,9 +31,14 @@ layout: default
 
 * category: <a href="../../../index.html#9145fcf955804ae7e9b4d105b4a823e6">cpl/math</a>
 * <a href="{{ site.github.repository_url }}/blob/master/cpl/math/__init__.py">View this file on GitHub</a>
-    - Last commit date: 2020-09-11 20:57:04+09:00
+    - Last commit date: 2020-09-11 22:03:00+09:00
 
 
+
+
+## Depends on
+
+* :heavy_check_mark: <a href="floor_sum.py.html">cpl/math/floor_sum.py</a>
 
 
 ## Code
@@ -41,6 +46,9 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
+from cpl.math.floor_sum import floor_sum
+
+__all__ = ["floor_sum"]
 
 ```
 {% endraw %}

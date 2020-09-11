@@ -31,9 +31,14 @@ layout: default
 
 * category: <a href="../../../index.html#7cadb34dd2b4e5dcd6ed1a15dda70c08">cpl/sample</a>
 * <a href="{{ site.github.repository_url }}/blob/master/cpl/sample/__init__.py">View this file on GitHub</a>
-    - Last commit date: 2020-09-09 23:37:03+09:00
+    - Last commit date: 2020-09-11 22:03:00+09:00
 
 
+
+
+## Depends on
+
+* :heavy_check_mark: <a href="aplusb.py.html">cpl/sample/aplusb.py</a>
 
 
 ## Code
@@ -41,6 +46,9 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
+from cpl.sample.aplusb import aplusb
+
+__all__ = ["aplusb"]
 
 ```
 {% endraw %}

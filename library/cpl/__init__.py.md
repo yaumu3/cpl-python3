@@ -25,15 +25,20 @@ layout: default
 <link rel="stylesheet" href="../../assets/css/copy-button.css" />
 
 
-# :warning: cpl/__init__.py
+# :heavy_check_mark: cpl/__init__.py
 
 <a href="../../index.html">Back to top page</a>
 
 * category: <a href="../../index.html#363ccddc87d476ad5f91d9ca39d24df0">cpl</a>
 * <a href="{{ site.github.repository_url }}/blob/master/cpl/__init__.py">View this file on GitHub</a>
-    - Last commit date: 2020-09-09 23:25:28+09:00
+    - Last commit date: 2020-09-11 22:03:00+09:00
 
 
+
+
+## Verified with
+
+* :heavy_check_mark: <a href="../../verify/tests/graph/shortest_path.test.py.html">tests/graph/shortest_path.test.py</a>
 
 
 ## Code
@@ -41,6 +46,19 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
+from itertools import tee
+
+INF = 1 << 64 - 1
+
+
+def pairwise(iterable):
+    "s -> (s0,s1), (s1,s2), (s2, s3), ..."
+    a, b = tee(iterable)
+    next(b, None)
+    return zip(a, b)
+
+
+__all__ = ["INF", "pairwise"]
 
 ```
 {% endraw %}

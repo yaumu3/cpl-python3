@@ -38,24 +38,23 @@ layout: default
 
 ### cpl
 
-* :warning: <a href="library/cpl/__init__.py.html">cpl/__init__.py</a>
-* :heavy_check_mark: <a href="library/cpl/constants.py.html">cpl/constants.py</a>
+* :heavy_check_mark: <a href="library/cpl/__init__.py.html">cpl/__init__.py</a>
 
 
 <div id="f94502e0ae6d80fbe0c13df140a5b263"></div>
 
 ### cpl/data_structure
 
-* :warning: <a href="library/cpl/data_structure/__init__.py.html">cpl/data_structure/__init__.py</a>
-* :heavy_check_mark: <a href="library/cpl/data_structure/dsu.py.html">cpl/data_structure/dsu.py</a>
+* :heavy_check_mark: <a href="library/cpl/data_structure/__init__.py.html">cpl/data_structure/__init__.py</a>
+* :warning: <a href="library/cpl/data_structure/dsu.py.html">cpl/data_structure/dsu.py</a>
 
 
 <div id="05f98b83664ba3f3f99f8f8001fd60c2"></div>
 
 ### cpl/graph
 
-* :warning: <a href="library/cpl/graph/__init__.py.html">cpl/graph/__init__.py</a>
-* :heavy_check_mark: <a href="library/cpl/graph/shortest_path.py.html">cpl/graph/shortest_path.py</a>
+* :heavy_check_mark: <a href="library/cpl/graph/__init__.py.html">cpl/graph/__init__.py</a>
+* :warning: <a href="library/cpl/graph/shortest_path.py.html">cpl/graph/shortest_path.py</a>
 
 
 <div id="9145fcf955804ae7e9b4d105b4a823e6"></div>

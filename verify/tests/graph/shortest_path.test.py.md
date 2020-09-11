@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#85578aebac047bd9defb7b2588885855">tests/graph</a>
 * <a href="{{ site.github.repository_url }}/blob/master/tests/graph/shortest_path.test.py">View this file on GitHub</a>
-    - Last commit date: 2020-09-11 20:57:58+09:00
+    - Last commit date: 2020-09-11 22:03:00+09:00
 
 
 * see: <a href="https://judge.yosupo.jp/problem/shortest_path">https://judge.yosupo.jp/problem/shortest_path</a>
@@ -39,8 +39,8 @@ layout: default
 
 ## Depends on
 
-* :heavy_check_mark: <a href="../../../library/cpl/constants.py.html">cpl/constants.py</a>
-* :heavy_check_mark: <a href="../../../library/cpl/graph/shortest_path.py.html">cpl/graph/shortest_path.py</a>
+* :heavy_check_mark: <a href="../../../library/cpl/__init__.py.html">cpl/__init__.py</a>
+* :heavy_check_mark: <a href="../../../library/cpl/graph/__init__.py.html">cpl/graph/__init__.py</a>
 
 
 ## Code
@@ -49,17 +49,8 @@ layout: default
 {% raw %}
 ```cpp
 # verify-helper: PROBLEM https://judge.yosupo.jp/problem/shortest_path
-from itertools import tee
-
-from cpl.constants import INF
-from cpl.graph.shortest_path import Dijkstra
-
-
-def pairwise(iterable):
-    "s -> (s0,s1), (s1,s2), (s2, s3), ..."
-    a, b = tee(iterable)
-    next(b, None)
-    return zip(a, b)
+from cpl import INF, pairwise
+from cpl.graph import Dijkstra
 
 
 def main() -> None:
