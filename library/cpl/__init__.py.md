@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../index.html#363ccddc87d476ad5f91d9ca39d24df0">cpl</a>
 * <a href="{{ site.github.repository_url }}/blob/master/cpl/__init__.py">View this file on GitHub</a>
-    - Last commit date: 2020-09-11 22:03:00+09:00
+    - Last commit date: 2020-09-12 19:53:19+09:00
 
 
 
@@ -48,8 +48,6 @@ layout: default
 ```cpp
 from itertools import tee
 
-INF = 1 << 64 - 1
-
 
 def pairwise(iterable):
     "s -> (s0,s1), (s1,s2), (s2, s3), ..."
@@ -58,7 +56,9 @@ def pairwise(iterable):
     return zip(a, b)
 
 
-__all__ = ["INF", "pairwise"]
+INF = 1 << 64 - 1
+
+__all__ = ["pairwise", "INF"]
 
 ```
 {% endraw %}

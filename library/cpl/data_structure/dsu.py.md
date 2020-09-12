@@ -25,7 +25,7 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :warning: cpl/data_structure/dsu.py
+# :heavy_check_mark: cpl/data_structure/dsu.py
 
 <a href="../../../index.html">Back to top page</a>
 
@@ -36,9 +36,9 @@ layout: default
 
 
 
-## Required by
+## Verified with
 
-* :heavy_check_mark: <a href="__init__.py.html">cpl/data_structure/__init__.py</a>
+* :heavy_check_mark: <a href="../../../verify/tests/data_structure/dsu.test.py.html">tests/data_structure/dsu.test.py</a>
 
 
 ## Code

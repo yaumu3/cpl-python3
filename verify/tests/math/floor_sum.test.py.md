@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#082483a7677f16b78dc10411a4d111c4">tests/math</a>
 * <a href="{{ site.github.repository_url }}/blob/master/tests/math/floor_sum.test.py">View this file on GitHub</a>
-    - Last commit date: 2020-09-11 22:03:00+09:00
+    - Last commit date: 2020-09-10 00:02:36+09:00
 
 
 * see: <a href="https://judge.yosupo.jp/problem/sum_of_floor_of_linear">https://judge.yosupo.jp/problem/sum_of_floor_of_linear</a>
@@ -48,7 +48,7 @@ layout: default
 {% raw %}
 ```cpp
 # verify-helper: PROBLEM https://judge.yosupo.jp/problem/sum_of_floor_of_linear
-from cpl.math import floor_sum
+from cpl.math.floor_sum import floor_sum
 
 
 def main() -> None:

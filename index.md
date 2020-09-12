@@ -45,23 +45,20 @@ layout: default
 
 ### cpl/data_structure
 
-* :heavy_check_mark: <a href="library/cpl/data_structure/__init__.py.html">cpl/data_structure/__init__.py</a>
-* :warning: <a href="library/cpl/data_structure/dsu.py.html">cpl/data_structure/dsu.py</a>
+* :heavy_check_mark: <a href="library/cpl/data_structure/dsu.py.html">cpl/data_structure/dsu.py</a>
 
 
 <div id="05f98b83664ba3f3f99f8f8001fd60c2"></div>
 
 ### cpl/graph
 
-* :heavy_check_mark: <a href="library/cpl/graph/__init__.py.html">cpl/graph/__init__.py</a>
-* :warning: <a href="library/cpl/graph/shortest_path.py.html">cpl/graph/shortest_path.py</a>
+* :heavy_check_mark: <a href="library/cpl/graph/shortest_path.py.html">cpl/graph/shortest_path.py</a>
 
 
 <div id="9145fcf955804ae7e9b4d105b4a823e6"></div>
 
 ### cpl/math
 
-* :warning: <a href="library/cpl/math/__init__.py.html">cpl/math/__init__.py</a>
 * :heavy_check_mark: <a href="library/cpl/math/floor_sum.py.html">cpl/math/floor_sum.py</a>
 
 
@@ -69,7 +66,6 @@ layout: default
 
 ### cpl/sample
 
-* :warning: <a href="library/cpl/sample/__init__.py.html">cpl/sample/__init__.py</a>
 * :heavy_check_mark: <a href="library/cpl/sample/aplusb.py.html">cpl/sample/aplusb.py</a>
 
 

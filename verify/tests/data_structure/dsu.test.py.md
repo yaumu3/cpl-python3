@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#978b42f70cb56544e727df2bc8ea054c">tests/data_structure</a>
 * <a href="{{ site.github.repository_url }}/blob/master/tests/data_structure/dsu.test.py">View this file on GitHub</a>
-    - Last commit date: 2020-09-11 22:03:00+09:00
+    - Last commit date: 2020-09-09 23:53:14+09:00
 
 
 * see: <a href="https://judge.yosupo.jp/problem/unionfind">https://judge.yosupo.jp/problem/unionfind</a>
@@ -39,7 +39,7 @@ layout: default
 
 ## Depends on
 
-* :heavy_check_mark: <a href="../../../library/cpl/data_structure/__init__.py.html">cpl/data_structure/__init__.py</a>
+* :heavy_check_mark: <a href="../../../library/cpl/data_structure/dsu.py.html">cpl/data_structure/dsu.py</a>
 
 
 ## Code
@@ -48,7 +48,7 @@ layout: default
 {% raw %}
 ```cpp
 # verify-helper: PROBLEM https://judge.yosupo.jp/problem/unionfind
-from cpl.data_structure import DSU
+from cpl.data_structure.dsu import DSU
 
 
 def main() -> None:

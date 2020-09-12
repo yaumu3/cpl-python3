@@ -25,7 +25,7 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :warning: cpl/graph/shortest_path.py
+# :heavy_check_mark: cpl/graph/shortest_path.py
 
 <a href="../../../index.html">Back to top page</a>
 
@@ -36,9 +36,9 @@ layout: default
 
 
 
-## Required by
+## Verified with
 
-* :heavy_check_mark: <a href="__init__.py.html">cpl/graph/__init__.py</a>
+* :heavy_check_mark: <a href="../../../verify/tests/graph/shortest_path.test.py.html">tests/graph/shortest_path.test.py</a>
 
 
 ## Code

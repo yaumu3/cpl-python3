@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#47a1a16012980835571370d35ceff3bc">tests/sample</a>
 * <a href="{{ site.github.repository_url }}/blob/master/tests/sample/aplusb.test.py">View this file on GitHub</a>
-    - Last commit date: 2020-09-11 22:03:00+09:00
+    - Last commit date: 2020-09-09 23:37:03+09:00
 
 
 * see: <a href="https://judge.yosupo.jp/problem/aplusb">https://judge.yosupo.jp/problem/aplusb</a>
@@ -48,7 +48,7 @@ layout: default
 {% raw %}
 ```cpp
 # verify-helper: PROBLEM https://judge.yosupo.jp/problem/aplusb
-from cpl.sample import aplusb
+from cpl.sample.aplusb import aplusb
 
 
 def main() -> None:
