@@ -1,7 +1,7 @@
 from heapq import heappop, heappush
 from typing import List, Tuple
 
-from cpl.constants import INF
+from cpl import INF
 
 
 class Dijkstra:
