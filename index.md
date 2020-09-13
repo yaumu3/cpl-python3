@@ -52,6 +52,7 @@ layout: default
 
 ### cpl/graph
 
+* :heavy_check_mark: <a href="library/cpl/graph/bellman_ford.py.html">cpl/graph/bellman_ford.py</a>
 * :heavy_check_mark: <a href="library/cpl/graph/dijkstra.py.html">cpl/graph/dijkstra.py</a>
 * :heavy_check_mark: <a href="library/cpl/graph/floyd_warshall.py.html">cpl/graph/floyd_warshall.py</a>
 
@@ -73,6 +74,7 @@ layout: default
 ## Verify Files
 
 * :heavy_check_mark: <a href="verify/test/aoj/GRL_1_A.test.py.html">test/aoj/GRL_1_A.test.py</a>
+* :heavy_check_mark: <a href="verify/test/aoj/GRL_1_B.test.py.html">test/aoj/GRL_1_B.test.py</a>
 * :heavy_check_mark: <a href="verify/test/aoj/GRL_1_C.test.py.html">test/aoj/GRL_1_C.test.py</a>
 * :heavy_check_mark: <a href="verify/test/yosupo/aplusb.test.py.html">test/yosupo/aplusb.test.py</a>
 * :heavy_check_mark: <a href="verify/test/yosupo/many_aplusb.test.py.html">test/yosupo/many_aplusb.test.py</a>

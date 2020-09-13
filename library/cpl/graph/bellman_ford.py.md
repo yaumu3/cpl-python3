@@ -21,27 +21,24 @@ layout: default
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-balloon-js@1.1.2/jquery.balloon.min.js" integrity="sha256-ZEYs9VrgAeNuPvs15E39OsyOJaIkXEEt10fzxJ20+2I=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="../../assets/js/copy-button.js"></script>
-<link rel="stylesheet" href="../../assets/css/copy-button.css" />
+<script type="text/javascript" src="../../../assets/js/copy-button.js"></script>
+<link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: cpl/__init__.py
+# :heavy_check_mark: cpl/graph/bellman_ford.py
 
-<a href="../../index.html">Back to top page</a>
+<a href="../../../index.html">Back to top page</a>
 
-* category: <a href="../../index.html#363ccddc87d476ad5f91d9ca39d24df0">cpl</a>
-* <a href="{{ site.github.repository_url }}/blob/master/cpl/__init__.py">View this file on GitHub</a>
-    - Last commit date: 2020-09-12 19:53:19+09:00
+* category: <a href="../../../index.html#05f98b83664ba3f3f99f8f8001fd60c2">cpl/graph</a>
+* <a href="{{ site.github.repository_url }}/blob/master/cpl/graph/bellman_ford.py">View this file on GitHub</a>
+    - Last commit date: 1970-01-01 00:00:00+00:00
 
 
 
 
 ## Verified with
 
-* :heavy_check_mark: <a href="../../verify/test/aoj/GRL_1_A.test.py.html">test/aoj/GRL_1_A.test.py</a>
-* :heavy_check_mark: <a href="../../verify/test/aoj/GRL_1_B.test.py.html">test/aoj/GRL_1_B.test.py</a>
-* :heavy_check_mark: <a href="../../verify/test/aoj/GRL_1_C.test.py.html">test/aoj/GRL_1_C.test.py</a>
-* :heavy_check_mark: <a href="../../verify/test/yosupo/shortest_path.test.py.html">test/yosupo/shortest_path.test.py</a>
+* :heavy_check_mark: <a href="../../../verify/test/aoj/GRL_1_B.test.py.html">test/aoj/GRL_1_B.test.py</a>
 
 
 ## Code
@@ -49,19 +46,33 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
-from itertools import tee
+from typing import List, Tuple
+
+from cpl import INF
 
 
-def pairwise(iterable):
-    "s -> (s0,s1), (s1,s2), (s2, s3), ..."
-    a, b = tee(iterable)
-    next(b, None)
-    return zip(a, b)
+def bellman_ford(
+    graph: List[List[Tuple[int, int]]], start: int
+) -> Tuple[bool, List[int]]:
+    N = len(graph)
+    cost = [INF] * N
+    cost[start] = 0
 
-
-INF = 1 << 64 - 1
-
-__all__ = ["pairwise", "INF"]
+    for i in range(N):
+        is_intact = True
+        for v in range(N):
+            if cost[v] == INF:
+                continue
+            for nv, nw in graph[v]:
+                if (nc := cost[v] + nw) >= cost[nv]:
+                    continue
+                cost[nv] = nc
+                is_intact = False
+                if i == N - 1:
+                    return True, []
+        if is_intact:
+            break
+    return False, cost
 
 ```
 {% endraw %}
@@ -79,5 +90,5 @@ NotImplementedError
 ```
 {% endraw %}
 
-<a href="../../index.html">Back to top page</a>
+<a href="../../../index.html">Back to top page</a>
 
