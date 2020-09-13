@@ -4,7 +4,7 @@ from cpl.graph.floyd_warshall import floyd_warshall
 
 
 def main() -> None:
-    V, E, *std = map(int, open(0).read().split())
+    V, _, *std = map(int, open(0).read().split())
     graph = [[INF] * V for _ in range(V)]
     for i in range(V):
         graph[i][i] = 0
