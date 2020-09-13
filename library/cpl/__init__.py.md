@@ -36,13 +36,10 @@ layout: default
 
 
 
-## Required by
-
-* :warning: <a href="../test/aoj/GRL_1_C.py.html">test/aoj/GRL_1_C.py</a>
-
-
 ## Verified with
 
+* :heavy_check_mark: <a href="../../verify/test/aoj/GRL_1_A.test.py.html">test/aoj/GRL_1_A.test.py</a>
+* :heavy_check_mark: <a href="../../verify/test/aoj/GRL_1_C.test.py.html">test/aoj/GRL_1_C.test.py</a>
 * :heavy_check_mark: <a href="../../verify/test/yosupo/shortest_path.test.py.html">test/yosupo/shortest_path.test.py</a>
 
 

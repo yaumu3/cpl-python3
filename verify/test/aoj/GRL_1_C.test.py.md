@@ -25,21 +25,22 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: cpl/graph/dijkstra.py
+# :heavy_check_mark: test/aoj/GRL_1_C.test.py
 
 <a href="../../../index.html">Back to top page</a>
 
-* category: <a href="../../../index.html#05f98b83664ba3f3f99f8f8001fd60c2">cpl/graph</a>
-* <a href="{{ site.github.repository_url }}/blob/master/cpl/graph/dijkstra.py">View this file on GitHub</a>
-    - Last commit date: 1970-01-01 00:00:00+00:00
+* category: <a href="../../../index.html#0d0c91c0cca30af9c1c9faef0cf04aa9">test/aoj</a>
+* <a href="{{ site.github.repository_url }}/blob/master/test/aoj/GRL_1_C.test.py">View this file on GitHub</a>
+    - Last commit date: 2020-09-13 16:59:53+09:00
 
 
+* see: <a href="http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C">http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C</a>
 
 
-## Verified with
+## Depends on
 
-* :heavy_check_mark: <a href="../../../verify/test/aoj/GRL_1_A.test.py.html">test/aoj/GRL_1_A.test.py</a>
-* :heavy_check_mark: <a href="../../../verify/test/yosupo/shortest_path.test.py.html">test/yosupo/shortest_path.test.py</a>
+* :heavy_check_mark: <a href="../../../library/cpl/__init__.py.html">cpl/__init__.py</a>
+* :heavy_check_mark: <a href="../../../library/cpl/graph/floyd_warshall.py.html">cpl/graph/floyd_warshall.py</a>
 
 
 ## Code
@@ -47,44 +48,29 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
-from heapq import heappop, heappush
-from typing import List, Tuple
-
+# noqa: E501 # verify-helper: PROBLEM http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C
 from cpl import INF
+from cpl.graph.floyd_warshall import floyd_warshall
 
 
-class Dijkstra:
-    def __init__(self, graph: List[List[Tuple[int, int]]], start: int) -> None:
-        N = len(graph)
-        pq: List[Tuple[int, int]] = []
-        heappush(pq, (0, start))
+def main() -> None:
+    V, _, *std = map(int, open(0).read().split())
+    graph = [[INF] * V for _ in range(V)]
+    for i in range(V):
+        graph[i][i] = 0
+    for s, t, d in zip(*[iter(std)] * 3):
+        graph[s][t] = d
+    dist = floyd_warshall(graph)
+    # If distance of any node from itself is negative,
+    # negative cycle is detected.
+    if any(dist[i][i] < 0 for i in range(V)):
+        print("NEGATIVE CYCLE")
+        exit()
+    [print(" ".join(map(str, row)).replace(str(INF), "INF")) for row in dist]
 
-        cost: List[int] = [INF] * N
-        cost[start] = 0
-        prev: List[int] = [-1] * N
-        while pq:
-            w, v = heappop(pq)
-            if w > cost[v]:
-                continue
-            for nv, nw in graph[v]:
-                if (nc := cost[v] + nw) >= cost[nv]:
-                    continue
-                cost[nv] = nc
-                prev[nv] = v
-                heappush(pq, (nc, nv))
-        self.cost = cost
-        self.prev = prev
 
-    def min_cost(self, goal: int):
-        return self.cost[goal]
-
-    def min_cost_path(self, goal: int):
-        nd = goal
-        path: List[int] = []
-        while nd >= 0:
-            path.append(nd)
-            nd = self.prev[nd]
-        return path[::-1]
+if __name__ == "__main__":
+    main()
 
 ```
 {% endraw %}

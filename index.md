@@ -53,7 +53,7 @@ layout: default
 ### cpl/graph
 
 * :heavy_check_mark: <a href="library/cpl/graph/dijkstra.py.html">cpl/graph/dijkstra.py</a>
-* :warning: <a href="library/cpl/graph/floyd_warshall.py.html">cpl/graph/floyd_warshall.py</a>
+* :heavy_check_mark: <a href="library/cpl/graph/floyd_warshall.py.html">cpl/graph/floyd_warshall.py</a>
 
 
 <div id="9145fcf955804ae7e9b4d105b4a823e6"></div>
@@ -70,15 +70,10 @@ layout: default
 * :heavy_check_mark: <a href="library/cpl/sample/aplusb.py.html">cpl/sample/aplusb.py</a>
 
 
-<div id="0d0c91c0cca30af9c1c9faef0cf04aa9"></div>
-
-### test/aoj
-
-* :warning: <a href="library/test/aoj/GRL_1_C.py.html">test/aoj/GRL_1_C.py</a>
-
-
 ## Verify Files
 
+* :heavy_check_mark: <a href="verify/test/aoj/GRL_1_A.test.py.html">test/aoj/GRL_1_A.test.py</a>
+* :heavy_check_mark: <a href="verify/test/aoj/GRL_1_C.test.py.html">test/aoj/GRL_1_C.test.py</a>
 * :heavy_check_mark: <a href="verify/test/yosupo/aplusb.test.py.html">test/yosupo/aplusb.test.py</a>
 * :heavy_check_mark: <a href="verify/test/yosupo/many_aplusb.test.py.html">test/yosupo/many_aplusb.test.py</a>
 * :heavy_check_mark: <a href="verify/test/yosupo/shortest_path.test.py.html">test/yosupo/shortest_path.test.py</a>

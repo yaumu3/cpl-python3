@@ -25,7 +25,7 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :warning: cpl/graph/floyd_warshall.py
+# :heavy_check_mark: cpl/graph/floyd_warshall.py
 
 <a href="../../../index.html">Back to top page</a>
 
@@ -36,9 +36,9 @@ layout: default
 
 
 
-## Required by
+## Verified with
 
-* :warning: <a href="../../test/aoj/GRL_1_C.py.html">test/aoj/GRL_1_C.py</a>
+* :heavy_check_mark: <a href="../../../verify/test/aoj/GRL_1_C.test.py.html">test/aoj/GRL_1_C.test.py</a>
 
 
 ## Code
