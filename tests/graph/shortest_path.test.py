@@ -1,6 +1,6 @@
 # verify-helper: PROBLEM https://judge.yosupo.jp/problem/shortest_path
 from cpl import INF, pairwise
-from cpl.graph.shortest_path import Dijkstra
+from cpl.graph.dijkstra import Dijkstra
 
 
 def main() -> None:
