@@ -25,22 +25,22 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :x: tests/graph/all_pairs_shortest_path.test.py
+# :heavy_check_mark: tests/graph/all_pairs_shortest_path.test.py
 
 <a href="../../../index.html">Back to top page</a>
 
 * category: <a href="../../../index.html#85578aebac047bd9defb7b2588885855">tests/graph</a>
 * <a href="{{ site.github.repository_url }}/blob/master/tests/graph/all_pairs_shortest_path.test.py">View this file on GitHub</a>
-    - Last commit date: 2020-09-13 15:46:55+09:00
+    - Last commit date: 2020-09-13 15:56:47+09:00
 
 
-* see: <a href="http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C  # noqa: E501">http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C  # noqa: E501</a>
+* see: <a href="http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C">http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C</a>
 
 
 ## Depends on
 
-* :question: <a href="../../../library/cpl/__init__.py.html">cpl/__init__.py</a>
-* :x: <a href="../../../library/cpl/graph/floyd_warshall.py.html">cpl/graph/floyd_warshall.py</a>
+* :heavy_check_mark: <a href="../../../library/cpl/__init__.py.html">cpl/__init__.py</a>
+* :heavy_check_mark: <a href="../../../library/cpl/graph/floyd_warshall.py.html">cpl/graph/floyd_warshall.py</a>
 
 
 ## Code
@@ -48,7 +48,7 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
-# verify-helper: PROBLEM http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C  # noqa: E501
+# noqa: E501 # verify-helper: PROBLEM http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C
 from cpl import INF
 from cpl.graph.floyd_warshall import floyd_warshall
 

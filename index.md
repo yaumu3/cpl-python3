@@ -38,7 +38,7 @@ layout: default
 
 ### cpl
 
-* :question: <a href="library/cpl/__init__.py.html">cpl/__init__.py</a>
+* :heavy_check_mark: <a href="library/cpl/__init__.py.html">cpl/__init__.py</a>
 
 
 <div id="f94502e0ae6d80fbe0c13df140a5b263"></div>
@@ -53,7 +53,7 @@ layout: default
 ### cpl/graph
 
 * :heavy_check_mark: <a href="library/cpl/graph/dijkstra.py.html">cpl/graph/dijkstra.py</a>
-* :x: <a href="library/cpl/graph/floyd_warshall.py.html">cpl/graph/floyd_warshall.py</a>
+* :heavy_check_mark: <a href="library/cpl/graph/floyd_warshall.py.html">cpl/graph/floyd_warshall.py</a>
 
 
 <div id="9145fcf955804ae7e9b4d105b4a823e6"></div>
@@ -73,7 +73,7 @@ layout: default
 ## Verify Files
 
 * :heavy_check_mark: <a href="verify/tests/data_structure/dsu.test.py.html">tests/data_structure/dsu.test.py</a>
-* :x: <a href="verify/tests/graph/all_pairs_shortest_path.test.py.html">tests/graph/all_pairs_shortest_path.test.py</a>
+* :heavy_check_mark: <a href="verify/tests/graph/all_pairs_shortest_path.test.py.html">tests/graph/all_pairs_shortest_path.test.py</a>
 * :heavy_check_mark: <a href="verify/tests/graph/shortest_path.test.py.html">tests/graph/shortest_path.test.py</a>
 * :heavy_check_mark: <a href="verify/tests/math/floor_sum.test.py.html">tests/math/floor_sum.test.py</a>
 * :heavy_check_mark: <a href="verify/tests/sample/aplusb.test.py.html">tests/sample/aplusb.test.py</a>
