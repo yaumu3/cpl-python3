@@ -45,7 +45,7 @@ layout: default
 
 ### cpl/combinatronics
 
-* :warning: <a href="library/cpl/combinatronics/enumerator.py.html">cpl/combinatronics/enumerator.py</a>
+* :heavy_check_mark: <a href="library/cpl/combinatronics/enumerator.py.html">cpl/combinatronics/enumerator.py</a>
 
 
 <div id="f94502e0ae6d80fbe0c13df140a5b263"></div>
@@ -78,17 +78,11 @@ layout: default
 * :heavy_check_mark: <a href="library/cpl/sample/aplusb.py.html">cpl/sample/aplusb.py</a>
 
 
-<div id="0d0c91c0cca30af9c1c9faef0cf04aa9"></div>
-
-### test/aoj
-
-* :warning: <a href="library/test/aoj/DPL_5_B.py.html">test/aoj/DPL_5_B.py</a>
-* :warning: <a href="library/test/aoj/DPL_5_D.py.html">test/aoj/DPL_5_D.py</a>
-* :warning: <a href="library/test/aoj/DPL_5_E.py.html">test/aoj/DPL_5_E.py</a>
-
-
 ## Verify Files
 
+* :heavy_check_mark: <a href="verify/test/aoj/DPL_5_B.test.py.html">test/aoj/DPL_5_B.test.py</a>
+* :heavy_check_mark: <a href="verify/test/aoj/DPL_5_D.test.py.html">test/aoj/DPL_5_D.test.py</a>
+* :heavy_check_mark: <a href="verify/test/aoj/DPL_5_E.test.py.html">test/aoj/DPL_5_E.test.py</a>
 * :heavy_check_mark: <a href="verify/test/aoj/GRL_1_A.test.py.html">test/aoj/GRL_1_A.test.py</a>
 * :heavy_check_mark: <a href="verify/test/aoj/GRL_1_B.test.py.html">test/aoj/GRL_1_B.test.py</a>
 * :heavy_check_mark: <a href="verify/test/aoj/GRL_1_C.test.py.html">test/aoj/GRL_1_C.test.py</a>

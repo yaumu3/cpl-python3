@@ -25,22 +25,22 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :warning: cpl/combinatronics/enumerator.py
+# :heavy_check_mark: cpl/combinatronics/enumerator.py
 
 <a href="../../../index.html">Back to top page</a>
 
 * category: <a href="../../../index.html#73cd78cad8ef8a4132616770a881e8da">cpl/combinatronics</a>
 * <a href="{{ site.github.repository_url }}/blob/master/cpl/combinatronics/enumerator.py">View this file on GitHub</a>
-    - Last commit date: 2020-09-13 19:17:52+09:00
+    - Last commit date: 2020-09-13 19:20:22+09:00
 
 
 
 
-## Required by
+## Verified with
 
-* :warning: <a href="../../test/aoj/DPL_5_B.py.html">test/aoj/DPL_5_B.py</a>
-* :warning: <a href="../../test/aoj/DPL_5_D.py.html">test/aoj/DPL_5_D.py</a>
-* :warning: <a href="../../test/aoj/DPL_5_E.py.html">test/aoj/DPL_5_E.py</a>
+* :heavy_check_mark: <a href="../../../verify/test/aoj/DPL_5_B.test.py.html">test/aoj/DPL_5_B.test.py</a>
+* :heavy_check_mark: <a href="../../../verify/test/aoj/DPL_5_D.test.py.html">test/aoj/DPL_5_D.test.py</a>
+* :heavy_check_mark: <a href="../../../verify/test/aoj/DPL_5_E.test.py.html">test/aoj/DPL_5_E.test.py</a>
 
 
 ## Code

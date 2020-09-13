@@ -25,21 +25,21 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :warning: test/aoj/DPL_5_B.py
+# :heavy_check_mark: test/aoj/DPL_5_D.test.py
 
 <a href="../../../index.html">Back to top page</a>
 
 * category: <a href="../../../index.html#0d0c91c0cca30af9c1c9faef0cf04aa9">test/aoj</a>
-* <a href="{{ site.github.repository_url }}/blob/master/test/aoj/DPL_5_B.py">View this file on GitHub</a>
-    - Last commit date: 2020-09-13 19:17:52+09:00
+* <a href="{{ site.github.repository_url }}/blob/master/test/aoj/DPL_5_D.test.py">View this file on GitHub</a>
+    - Last commit date: 2020-09-13 19:20:22+09:00
 
 
-* see: <a href="https://onlinejudge.u-aizu.ac.jp/courses/library/7/DPL/5/DPL_5_B">https://onlinejudge.u-aizu.ac.jp/courses/library/7/DPL/5/DPL_5_B</a>
+* see: <a href="https://onlinejudge.u-aizu.ac.jp/courses/library/7/DPL/5/DPL_5_D">https://onlinejudge.u-aizu.ac.jp/courses/library/7/DPL/5/DPL_5_D</a>
 
 
 ## Depends on
 
-* :warning: <a href="../../cpl/combinatronics/enumerator.py.html">cpl/combinatronics/enumerator.py</a>
+* :heavy_check_mark: <a href="../../../library/cpl/combinatronics/enumerator.py.html">cpl/combinatronics/enumerator.py</a>
 
 
 ## Code
@@ -47,14 +47,14 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
-# noqa: E501 # verify-helper: PROBLEM https://onlinejudge.u-aizu.ac.jp/courses/library/7/DPL/5/DPL_5_B
+# noqa: E501 # verify-helper: PROBLEM https://onlinejudge.u-aizu.ac.jp/courses/library/7/DPL/5/DPL_5_D
 from cpl.combinatronics.enumerator import Enumerator
 
 
 def main() -> None:
     n, k = map(int, input().split())
-    e = Enumerator(k, 1_000_000_007)
-    print(e.permutate(k, n))
+    e = Enumerator(n + k, 1_000_000_007)
+    print(e.choose_with_duplicates(n, k))
 
 
 if __name__ == "__main__":
