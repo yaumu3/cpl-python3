@@ -52,7 +52,7 @@ layout: default
 
 ### cpl/graph
 
-* :heavy_check_mark: <a href="library/cpl/graph/shortest_path.py.html">cpl/graph/shortest_path.py</a>
+* :heavy_check_mark: <a href="library/cpl/graph/dijkstra.py.html">cpl/graph/dijkstra.py</a>
 
 
 <div id="9145fcf955804ae7e9b4d105b4a823e6"></div>

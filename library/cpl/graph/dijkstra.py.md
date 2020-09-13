@@ -25,12 +25,12 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: cpl/graph/shortest_path.py
+# :heavy_check_mark: cpl/graph/dijkstra.py
 
 <a href="../../../index.html">Back to top page</a>
 
 * category: <a href="../../../index.html#05f98b83664ba3f3f99f8f8001fd60c2">cpl/graph</a>
-* <a href="{{ site.github.repository_url }}/blob/master/cpl/graph/shortest_path.py">View this file on GitHub</a>
+* <a href="{{ site.github.repository_url }}/blob/master/cpl/graph/dijkstra.py">View this file on GitHub</a>
     - Last commit date: 1970-01-01 00:00:00+00:00
 
 
