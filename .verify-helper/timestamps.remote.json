@@ -1,8 +1,7 @@
 {
-"tests/data_structure/dsu.test.py": "2020-09-09 23:53:14 +0900",
-"tests/graph/all_pairs_shortest_path.test.py": "2020-09-13 15:56:47 +0900",
-"tests/graph/shortest_path.test.py": "2020-09-13 14:36:52 +0900",
-"tests/math/floor_sum.test.py": "2020-09-10 00:02:36 +0900",
-"tests/sample/aplusb.test.py": "2020-09-09 23:37:03 +0900",
-"tests/sample/many_aplusb.test.py": "2020-09-09 23:37:03 +0900"
+"test/yosupo/aplusb.test.py": "2020-09-13 16:33:52 +0900",
+"test/yosupo/many_aplusb.test.py": "2020-09-13 16:33:52 +0900",
+"test/yosupo/shortest_path.test.py": "2020-09-13 16:33:52 +0900",
+"test/yosupo/sum_of_floor_of_linear.test.py": "2020-09-13 16:33:52 +0900",
+"test/yosupo/unionfind.test.py": "2020-09-13 16:33:52 +0900"
 }
