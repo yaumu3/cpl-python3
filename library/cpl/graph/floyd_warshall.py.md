@@ -25,7 +25,7 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: cpl/graph/floyd_warshall.py
+# :warning: cpl/graph/floyd_warshall.py
 
 <a href="../../../index.html">Back to top page</a>
 
@@ -36,9 +36,9 @@ layout: default
 
 
 
-## Verified with
+## Required by
 
-* :heavy_check_mark: <a href="../../../verify/tests/graph/all_pairs_shortest_path.test.py.html">tests/graph/all_pairs_shortest_path.test.py</a>
+* :warning: <a href="../../test/aoj/GRL_1_C.py.html">test/aoj/GRL_1_C.py</a>
 
 
 ## Code

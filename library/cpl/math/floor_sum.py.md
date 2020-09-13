@@ -38,7 +38,7 @@ layout: default
 
 ## Verified with
 
-* :heavy_check_mark: <a href="../../../verify/tests/math/floor_sum.test.py.html">tests/math/floor_sum.test.py</a>
+* :heavy_check_mark: <a href="../../../verify/test/yosupo/sum_of_floor_of_linear.test.py.html">test/yosupo/sum_of_floor_of_linear.test.py</a>
 
 
 ## Code

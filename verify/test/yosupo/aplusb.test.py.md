@@ -25,21 +25,21 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: tests/data_structure/dsu.test.py
+# :heavy_check_mark: test/yosupo/aplusb.test.py
 
 <a href="../../../index.html">Back to top page</a>
 
-* category: <a href="../../../index.html#978b42f70cb56544e727df2bc8ea054c">tests/data_structure</a>
-* <a href="{{ site.github.repository_url }}/blob/master/tests/data_structure/dsu.test.py">View this file on GitHub</a>
-    - Last commit date: 2020-09-09 23:53:14+09:00
+* category: <a href="../../../index.html#0b58406058f6619a0f31a172defc0230">test/yosupo</a>
+* <a href="{{ site.github.repository_url }}/blob/master/test/yosupo/aplusb.test.py">View this file on GitHub</a>
+    - Last commit date: 2020-09-13 16:33:52+09:00
 
 
-* see: <a href="https://judge.yosupo.jp/problem/unionfind">https://judge.yosupo.jp/problem/unionfind</a>
+* see: <a href="https://judge.yosupo.jp/problem/aplusb">https://judge.yosupo.jp/problem/aplusb</a>
 
 
 ## Depends on
 
-* :heavy_check_mark: <a href="../../../library/cpl/data_structure/dsu.py.html">cpl/data_structure/dsu.py</a>
+* :heavy_check_mark: <a href="../../../library/cpl/sample/aplusb.py.html">cpl/sample/aplusb.py</a>
 
 
 ## Code
@@ -47,18 +47,13 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
-# verify-helper: PROBLEM https://judge.yosupo.jp/problem/unionfind
-from cpl.data_structure.dsu import DSU
+# verify-helper: PROBLEM https://judge.yosupo.jp/problem/aplusb
+from cpl.sample.aplusb import aplusb
 
 
 def main() -> None:
-    N, _, *tuv = map(int, open(0).read().split())
-    dsu = DSU(N)
-    for t, u, v in zip(*[iter(tuv)] * 3):
-        if t == 0:
-            dsu.merge(u, v)
-        else:
-            print(int(dsu.same(u, v)))
+    A, B = map(int, input().split())
+    print(aplusb(A, B))
 
 
 if __name__ == "__main__":

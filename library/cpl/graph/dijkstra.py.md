@@ -38,7 +38,7 @@ layout: default
 
 ## Verified with
 
-* :heavy_check_mark: <a href="../../../verify/tests/graph/shortest_path.test.py.html">tests/graph/shortest_path.test.py</a>
+* :heavy_check_mark: <a href="../../../verify/test/yosupo/shortest_path.test.py.html">test/yosupo/shortest_path.test.py</a>
 
 
 ## Code

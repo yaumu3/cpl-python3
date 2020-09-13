@@ -25,21 +25,22 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: tests/math/floor_sum.test.py
+# :warning: test/aoj/GRL_1_C.py
 
 <a href="../../../index.html">Back to top page</a>
 
-* category: <a href="../../../index.html#082483a7677f16b78dc10411a4d111c4">tests/math</a>
-* <a href="{{ site.github.repository_url }}/blob/master/tests/math/floor_sum.test.py">View this file on GitHub</a>
-    - Last commit date: 2020-09-10 00:02:36+09:00
+* category: <a href="../../../index.html#0d0c91c0cca30af9c1c9faef0cf04aa9">test/aoj</a>
+* <a href="{{ site.github.repository_url }}/blob/master/test/aoj/GRL_1_C.py">View this file on GitHub</a>
+    - Last commit date: 2020-09-13 16:33:52+09:00
 
 
-* see: <a href="https://judge.yosupo.jp/problem/sum_of_floor_of_linear">https://judge.yosupo.jp/problem/sum_of_floor_of_linear</a>
+* see: <a href="http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C">http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C</a>
 
 
 ## Depends on
 
-* :heavy_check_mark: <a href="../../../library/cpl/math/floor_sum.py.html">cpl/math/floor_sum.py</a>
+* :heavy_check_mark: <a href="../../cpl/__init__.py.html">cpl/__init__.py</a>
+* :warning: <a href="../../cpl/graph/floyd_warshall.py.html">cpl/graph/floyd_warshall.py</a>
 
 
 ## Code
@@ -47,14 +48,25 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
-# verify-helper: PROBLEM https://judge.yosupo.jp/problem/sum_of_floor_of_linear
-from cpl.math.floor_sum import floor_sum
+# noqa: E501 # verify-helper: PROBLEM http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C
+from cpl import INF
+from cpl.graph.floyd_warshall import floyd_warshall
 
 
 def main() -> None:
-    _, *queries = map(int, open(0).read().split())
-    for q in zip(*[iter(queries)] * 4):
-        print(floor_sum(*q))
+    V, _, *std = map(int, open(0).read().split())
+    graph = [[INF] * V for _ in range(V)]
+    for i in range(V):
+        graph[i][i] = 0
+    for s, t, d in zip(*[iter(std)] * 3):
+        graph[s][t] = d
+    dist = floyd_warshall(graph)
+    # If distance of any node from itself is negative,
+    # negative cycle is detected.
+    if any(dist[i][i] < 0 for i in range(V)):
+        print("NEGATIVE CYCLE")
+        exit()
+    [print(" ".join(map(str, row)).replace(str(INF), "INF")) for row in dist]
 
 
 if __name__ == "__main__":

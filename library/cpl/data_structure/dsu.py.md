@@ -38,7 +38,7 @@ layout: default
 
 ## Verified with
 
-* :heavy_check_mark: <a href="../../../verify/tests/data_structure/dsu.test.py.html">tests/data_structure/dsu.test.py</a>
+* :heavy_check_mark: <a href="../../../verify/test/yosupo/unionfind.test.py.html">test/yosupo/unionfind.test.py</a>
 
 
 ## Code

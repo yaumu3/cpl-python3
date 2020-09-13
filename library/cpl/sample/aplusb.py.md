@@ -38,8 +38,8 @@ layout: default
 
 ## Verified with
 
-* :heavy_check_mark: <a href="../../../verify/tests/sample/aplusb.test.py.html">tests/sample/aplusb.test.py</a>
-* :heavy_check_mark: <a href="../../../verify/tests/sample/many_aplusb.test.py.html">tests/sample/many_aplusb.test.py</a>
+* :heavy_check_mark: <a href="../../../verify/test/yosupo/aplusb.test.py.html">test/yosupo/aplusb.test.py</a>
+* :heavy_check_mark: <a href="../../../verify/test/yosupo/many_aplusb.test.py.html">test/yosupo/many_aplusb.test.py</a>
 
 
 ## Code
