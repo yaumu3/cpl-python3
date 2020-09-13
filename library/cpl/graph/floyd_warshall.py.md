@@ -21,25 +21,24 @@ layout: default
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-balloon-js@1.1.2/jquery.balloon.min.js" integrity="sha256-ZEYs9VrgAeNuPvs15E39OsyOJaIkXEEt10fzxJ20+2I=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="../../assets/js/copy-button.js"></script>
-<link rel="stylesheet" href="../../assets/css/copy-button.css" />
+<script type="text/javascript" src="../../../assets/js/copy-button.js"></script>
+<link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :question: cpl/__init__.py
+# :x: cpl/graph/floyd_warshall.py
 
-<a href="../../index.html">Back to top page</a>
+<a href="../../../index.html">Back to top page</a>
 
-* category: <a href="../../index.html#363ccddc87d476ad5f91d9ca39d24df0">cpl</a>
-* <a href="{{ site.github.repository_url }}/blob/master/cpl/__init__.py">View this file on GitHub</a>
-    - Last commit date: 2020-09-12 19:53:19+09:00
+* category: <a href="../../../index.html#05f98b83664ba3f3f99f8f8001fd60c2">cpl/graph</a>
+* <a href="{{ site.github.repository_url }}/blob/master/cpl/graph/floyd_warshall.py">View this file on GitHub</a>
+    - Last commit date: 1970-01-01 00:00:00+00:00
 
 
 
 
 ## Verified with
 
-* :x: <a href="../../verify/tests/graph/all_pairs_shortest_path.test.py.html">tests/graph/all_pairs_shortest_path.test.py</a>
-* :heavy_check_mark: <a href="../../verify/tests/graph/shortest_path.test.py.html">tests/graph/shortest_path.test.py</a>
+* :x: <a href="../../../verify/tests/graph/all_pairs_shortest_path.test.py.html">tests/graph/all_pairs_shortest_path.test.py</a>
 
 
 ## Code
@@ -47,19 +46,22 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
-from itertools import tee
+from copy import deepcopy
+from typing import List
+
+from cpl import INF
 
 
-def pairwise(iterable):
-    "s -> (s0,s1), (s1,s2), (s2, s3), ..."
-    a, b = tee(iterable)
-    next(b, None)
-    return zip(a, b)
-
-
-INF = 1 << 64 - 1
-
-__all__ = ["pairwise", "INF"]
+def floyd_warshall(graph: List[List[int]]):
+    N: int = len(graph)
+    cost: List[List[int]] = deepcopy(graph)
+    for k in range(N):
+        for i in range(N):
+            for j in range(N):
+                if cost[i][k] == INF or cost[k][j] == INF:
+                    continue
+                cost[i][j] = min(cost[i][j], cost[i][k] + cost[k][j])
+    return cost
 
 ```
 {% endraw %}
@@ -77,5 +79,5 @@ NotImplementedError
 ```
 {% endraw %}
 
-<a href="../../index.html">Back to top page</a>
+<a href="../../../index.html">Back to top page</a>
 

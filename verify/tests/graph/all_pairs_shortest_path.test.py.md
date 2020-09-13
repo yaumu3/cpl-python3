@@ -25,22 +25,22 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: tests/graph/shortest_path.test.py
+# :x: tests/graph/all_pairs_shortest_path.test.py
 
 <a href="../../../index.html">Back to top page</a>
 
 * category: <a href="../../../index.html#85578aebac047bd9defb7b2588885855">tests/graph</a>
-* <a href="{{ site.github.repository_url }}/blob/master/tests/graph/shortest_path.test.py">View this file on GitHub</a>
-    - Last commit date: 2020-09-13 14:36:52+09:00
+* <a href="{{ site.github.repository_url }}/blob/master/tests/graph/all_pairs_shortest_path.test.py">View this file on GitHub</a>
+    - Last commit date: 2020-09-13 15:46:55+09:00
 
 
-* see: <a href="https://judge.yosupo.jp/problem/shortest_path">https://judge.yosupo.jp/problem/shortest_path</a>
+* see: <a href="http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C  # noqa: E501">http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C  # noqa: E501</a>
 
 
 ## Depends on
 
 * :question: <a href="../../../library/cpl/__init__.py.html">cpl/__init__.py</a>
-* :heavy_check_mark: <a href="../../../library/cpl/graph/dijkstra.py.html">cpl/graph/dijkstra.py</a>
+* :x: <a href="../../../library/cpl/graph/floyd_warshall.py.html">cpl/graph/floyd_warshall.py</a>
 
 
 ## Code
@@ -48,26 +48,25 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
-# verify-helper: PROBLEM https://judge.yosupo.jp/problem/shortest_path
-from cpl import INF, pairwise
-from cpl.graph.dijkstra import Dijkstra
+# verify-helper: PROBLEM http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_1_C  # noqa: E501
+from cpl import INF
+from cpl.graph.floyd_warshall import floyd_warshall
 
 
 def main() -> None:
-    N, _, s, t, *abc = map(int, open(0).read().split())
-    G = [[] for _ in range(N)]
-    for a, b, c in zip(*[iter(abc)] * 3):
-        G[a].append((b, c))
-    d = Dijkstra(G, s)
-    mc = d.min_cost(t)
-    if mc == INF:
-        print(-1)
+    V, E, *std = map(int, open(0).read().split())
+    graph = [[INF] * V for _ in range(V)]
+    for i in range(V):
+        graph[i][i] = 0
+    for s, t, d in zip(*[iter(std)] * 3):
+        graph[s][t] = d
+    dist = floyd_warshall(graph)
+    # If distance of any node from itself is negative,
+    # negative cycle is detected.
+    if any(dist[i][i] < 0 for i in range(V)):
+        print("NEGATIVE CYCLE")
         exit()
-
-    path = d.min_cost_path(t)
-    print(mc, len(path) - 1)
-    for u, v in pairwise(path):
-        print(u, v)
+    [print(" ".join(map(str, row)).replace(str(INF), "INF")) for row in dist]
 
 
 if __name__ == "__main__":
