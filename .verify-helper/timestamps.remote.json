@@ -2,12 +2,13 @@
 "test/aoj/DPL_5_B.test.py": "2020-09-13 19:20:22 +0900",
 "test/aoj/DPL_5_D.test.py": "2020-09-13 19:20:22 +0900",
 "test/aoj/DPL_5_E.test.py": "2020-09-13 19:20:22 +0900",
-"test/aoj/GRL_1_A.test.py": "2020-09-13 16:59:53 +0900",
-"test/aoj/GRL_1_B.test.py": "2020-09-13 17:34:07 +0900",
-"test/aoj/GRL_1_C.test.py": "2020-09-13 16:59:53 +0900",
+"test/aoj/GRL_1_A.test.py": "2020-09-14 11:18:32 +0900",
+"test/aoj/GRL_1_B.test.py": "2020-09-14 16:03:18 +0900",
+"test/aoj/GRL_1_C.test.py": "2020-09-14 11:18:32 +0900",
+"test/aoj/GRL_2_A.test.py": "2020-09-14 16:04:22 +0900",
 "test/yosupo/aplusb.test.py": "2020-09-13 16:33:52 +0900",
 "test/yosupo/many_aplusb.test.py": "2020-09-13 16:33:52 +0900",
-"test/yosupo/shortest_path.test.py": "2020-09-13 16:33:52 +0900",
+"test/yosupo/shortest_path.test.py": "2020-09-14 11:18:32 +0900",
 "test/yosupo/sum_of_floor_of_linear.test.py": "2020-09-13 16:33:52 +0900",
 "test/yosupo/unionfind.test.py": "2020-09-13 16:33:52 +0900"
 }
