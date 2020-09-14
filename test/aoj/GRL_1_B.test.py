@@ -8,11 +8,11 @@ def main() -> None:
     graph = [[] for _ in range(V)]
     for s, t, d in zip(*[iter(std)] * 3):
         graph[s].append((t, d))
-    has_negative_cycle, cost = bellman_ford(graph, r)
-    if has_negative_cycle:
+    cost = bellman_ford(graph, r)
+    if cost:
+        print("\n".join(map(str, cost)).replace(str(INF), "INF"))
+    else:
         print("NEGATIVE CYCLE")
-        exit()
-    print("\n".join(map(str, cost)).replace(str(INF), "INF"))
 
 
 if __name__ == "__main__":
