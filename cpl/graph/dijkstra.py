@@ -2,10 +2,11 @@ from heapq import heappop, heappush
 from typing import List, Tuple
 
 from cpl import INF
+from cpl.graph import WeightedAdjList
 
 
 class Dijkstra:
-    def __init__(self, graph: List[List[Tuple[int, int]]], start: int) -> None:
+    def __init__(self, graph: WeightedAdjList, start: int) -> None:
         N = len(graph)
         pq: List[Tuple[int, int]] = []
         heappush(pq, (0, start))

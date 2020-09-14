@@ -1,12 +1,12 @@
 from copy import deepcopy
-from typing import List
 
 from cpl import INF
+from cpl.graph import AdjMatrix
 
 
-def floyd_warshall(graph: List[List[int]]):
+def floyd_warshall(graph: AdjMatrix):
     N: int = len(graph)
-    cost: List[List[int]] = deepcopy(graph)
+    cost: AdjMatrix = deepcopy(graph)
     for k in range(N):
         for i in range(N):
             for j in range(N):

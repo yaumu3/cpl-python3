@@ -1,11 +1,10 @@
 from typing import List, Tuple
 
 from cpl import INF
+from cpl.graph import WeightedAdjList
 
 
-def bellman_ford(
-    graph: List[List[Tuple[int, int]]], start: int
-) -> Tuple[bool, List[int]]:
+def bellman_ford(graph: WeightedAdjList, start: int) -> Tuple[bool, List[int]]:
     N = len(graph)
     cost = [INF] * N
     cost[start] = 0
