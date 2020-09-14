@@ -25,22 +25,21 @@ layout: default
 <link rel="stylesheet" href="../../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: test/yosupo/shortest_path.test.py
+# :heavy_check_mark: test/aoj/GRL_2_A.test.py
 
 <a href="../../../index.html">Back to top page</a>
 
-* category: <a href="../../../index.html#0b58406058f6619a0f31a172defc0230">test/yosupo</a>
-* <a href="{{ site.github.repository_url }}/blob/master/test/yosupo/shortest_path.test.py">View this file on GitHub</a>
-    - Last commit date: 2020-09-14 11:18:32+09:00
+* category: <a href="../../../index.html#0d0c91c0cca30af9c1c9faef0cf04aa9">test/aoj</a>
+* <a href="{{ site.github.repository_url }}/blob/master/test/aoj/GRL_2_A.test.py">View this file on GitHub</a>
+    - Last commit date: 2020-09-14 16:04:22+09:00
 
 
-* see: <a href="https://judge.yosupo.jp/problem/shortest_path">https://judge.yosupo.jp/problem/shortest_path</a>
+* see: <a href="https://onlinejudge.u-aizu.ac.jp/courses/library/5/GRL/2/GRL_2_A">https://onlinejudge.u-aizu.ac.jp/courses/library/5/GRL/2/GRL_2_A</a>
 
 
 ## Depends on
 
-* :heavy_check_mark: <a href="../../../library/cpl/__init__.py.html">cpl/__init__.py</a>
-* :heavy_check_mark: <a href="../../../library/cpl/graph/dijkstra.py.html">cpl/graph/dijkstra.py</a>
+* :heavy_check_mark: <a href="../../../library/cpl/graph/mst_kruskal.py.html">cpl/graph/mst_kruskal.py</a>
 
 
 ## Code
@@ -48,26 +47,15 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
-# verify-helper: PROBLEM https://judge.yosupo.jp/problem/shortest_path
-from cpl import INF, pairwise
-from cpl.graph.dijkstra import Dijkstra
+# noqa: E501 # verify-helper: PROBLEM https://onlinejudge.u-aizu.ac.jp/courses/library/5/GRL/2/GRL_2_A
+from cpl.graph.mst_kruskal import mst_kruskal
 
 
 def main() -> None:
-    N, _, s, t, *abc = map(int, open(0).read().split())
-    G = [[] for _ in range(N)]
-    for a, b, c in zip(*[iter(abc)] * 3):
-        G[a].append((b, c))
-    d = Dijkstra(G, s)
-    mc = d.min_cost(t)
-    if mc == INF:
-        print(-1)
-        exit()
-
-    path = d.min_cost_path(t)
-    print(mc, len(path) - 1)
-    for u, v in pairwise(path):
-        print(u, v)
+    V, _, *stw = map(int, open(0).read().split())
+    edges = [(s, t, w) for s, t, w in zip(*[iter(stw)] * 3)]
+    ans, _ = mst_kruskal(V, edges)
+    print(ans)
 
 
 if __name__ == "__main__":

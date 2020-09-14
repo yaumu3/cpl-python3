@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../../index.html#0d0c91c0cca30af9c1c9faef0cf04aa9">test/aoj</a>
 * <a href="{{ site.github.repository_url }}/blob/master/test/aoj/GRL_1_B.test.py">View this file on GitHub</a>
-    - Last commit date: 2020-09-13 17:34:07+09:00
+    - Last commit date: 2020-09-14 16:03:18+09:00
 
 
 * see: <a href="https://onlinejudge.u-aizu.ac.jp/courses/library/5/GRL/1/GRL_1_B">https://onlinejudge.u-aizu.ac.jp/courses/library/5/GRL/1/GRL_1_B</a>
@@ -58,11 +58,11 @@ def main() -> None:
     graph = [[] for _ in range(V)]
     for s, t, d in zip(*[iter(std)] * 3):
         graph[s].append((t, d))
-    has_negative_cycle, cost = bellman_ford(graph, r)
-    if has_negative_cycle:
+    cost = bellman_ford(graph, r)
+    if cost:
+        print("\n".join(map(str, cost)).replace(str(INF), "INF"))
+    else:
         print("NEGATIVE CYCLE")
-        exit()
-    print("\n".join(map(str, cost)).replace(str(INF), "INF"))
 
 
 if __name__ == "__main__":
