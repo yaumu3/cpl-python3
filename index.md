@@ -1,98 +1,126 @@
 ---
-layout: default
+data:
+  libraryCategories:
+  - name: cpl
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: cpl/__init__.py
+      title: cpl/__init__.py
+  - name: cpl/combinatronics
+    pages:
+    - icon: ':warning:'
+      path: cpl/combinatronics/__init__.py
+      title: cpl/combinatronics/__init__.py
+    - icon: ':heavy_check_mark:'
+      path: cpl/combinatronics/enumerator.py
+      title: cpl/combinatronics/enumerator.py
+  - name: cpl/data_structure
+    pages:
+    - icon: ':warning:'
+      path: cpl/data_structure/__init__.py
+      title: cpl/data_structure/__init__.py
+    - icon: ':heavy_check_mark:'
+      path: cpl/data_structure/dsu.py
+      title: cpl/data_structure/dsu.py
+  - name: cpl/geometry
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: cpl/geometry/__init__.py
+      title: cpl/geometry/__init__.py
+    - icon: ':heavy_check_mark:'
+      path: cpl/geometry/convex_hull.py
+      title: cpl/geometry/convex_hull.py
+  - name: cpl/graph
+    pages:
+    - icon: ':warning:'
+      path: cpl/graph/__init__.py
+      title: cpl/graph/__init__.py
+    - icon: ':heavy_check_mark:'
+      path: cpl/graph/bellman_ford.py
+      title: cpl/graph/bellman_ford.py
+    - icon: ':heavy_check_mark:'
+      path: cpl/graph/dijkstra.py
+      title: cpl/graph/dijkstra.py
+    - icon: ':heavy_check_mark:'
+      path: cpl/graph/floyd_warshall.py
+      title: cpl/graph/floyd_warshall.py
+    - icon: ':heavy_check_mark:'
+      path: cpl/graph/mst_kruskal.py
+      title: cpl/graph/mst_kruskal.py
+  - name: cpl/math
+    pages:
+    - icon: ':warning:'
+      path: cpl/math/__init__.py
+      title: cpl/math/__init__.py
+    - icon: ':heavy_check_mark:'
+      path: cpl/math/floor_sum.py
+      title: cpl/math/floor_sum.py
+  - name: cpl/sample
+    pages:
+    - icon: ':warning:'
+      path: cpl/sample/__init__.py
+      title: cpl/sample/__init__.py
+    - icon: ':heavy_check_mark:'
+      path: cpl/sample/aplusb.py
+      title: cpl/sample/aplusb.py
+  - name: test
+    pages:
+    - icon: ':warning:'
+      path: test/__init__.py
+      title: test/__init__.py
+  - name: test/aoj
+    pages:
+    - icon: ':warning:'
+      path: test/aoj/__init__.py
+      title: test/aoj/__init__.py
+  - name: test/yosupo
+    pages:
+    - icon: ':warning:'
+      path: test/yosupo/__init__.py
+      title: test/yosupo/__init__.py
+  verificationCategories:
+  - name: test/aoj
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: test/aoj/CGL_4_A.test.py
+      title: test/aoj/CGL_4_A.test.py
+    - icon: ':heavy_check_mark:'
+      path: test/aoj/DPL_5_B.test.py
+      title: test/aoj/DPL_5_B.test.py
+    - icon: ':heavy_check_mark:'
+      path: test/aoj/DPL_5_D.test.py
+      title: test/aoj/DPL_5_D.test.py
+    - icon: ':heavy_check_mark:'
+      path: test/aoj/DPL_5_E.test.py
+      title: test/aoj/DPL_5_E.test.py
+    - icon: ':heavy_check_mark:'
+      path: test/aoj/GRL_1_A.test.py
+      title: test/aoj/GRL_1_A.test.py
+    - icon: ':heavy_check_mark:'
+      path: test/aoj/GRL_1_B.test.py
+      title: test/aoj/GRL_1_B.test.py
+    - icon: ':heavy_check_mark:'
+      path: test/aoj/GRL_1_C.test.py
+      title: test/aoj/GRL_1_C.test.py
+    - icon: ':heavy_check_mark:'
+      path: test/aoj/GRL_2_A.test.py
+      title: test/aoj/GRL_2_A.test.py
+  - name: test/yosupo
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: test/yosupo/aplusb.test.py
+      title: test/yosupo/aplusb.test.py
+    - icon: ':heavy_check_mark:'
+      path: test/yosupo/many_aplusb.test.py
+      title: test/yosupo/many_aplusb.test.py
+    - icon: ':heavy_check_mark:'
+      path: test/yosupo/shortest_path.test.py
+      title: test/yosupo/shortest_path.test.py
+    - icon: ':heavy_check_mark:'
+      path: test/yosupo/sum_of_floor_of_linear.test.py
+      title: test/yosupo/sum_of_floor_of_linear.test.py
+    - icon: ':heavy_check_mark:'
+      path: test/yosupo/unionfind.test.py
+      title: test/yosupo/unionfind.test.py
+layout: toppage
 ---
-
-<!-- mathjax config similar to math.stackexchange -->
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    TeX: { equationNumbers: { autoNumber: "AMS" }},
-    tex2jax: {
-      inlineMath: [ ['$','$'] ],
-      processEscapes: true
-    },
-    "HTML-CSS": { matchFontHeight: false },
-    displayAlign: "left",
-    displayIndent: "2em"
-  });
-</script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery-balloon-js@1.1.2/jquery.balloon.min.js" integrity="sha256-ZEYs9VrgAeNuPvs15E39OsyOJaIkXEEt10fzxJ20+2I=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="assets/js/copy-button.js"></script>
-<link rel="stylesheet" href="assets/css/copy-button.css" />
-
-
-# {{ site.title }}
-
-[![Actions Status]({{ site.github.repository_url }}/workflows/verify/badge.svg)]({{ site.github.repository_url }}/actions)
-<a href="{{ site.github.repository_url }}"><img src="https://img.shields.io/github/last-commit/{{ site.github.owner_name }}/{{ site.github.repository_name }}" /></a>
-
-{% if site.github.project_tagline %}{{ site.github.project_tagline }}{% else %}This documentation is automatically generated by <a href="https://github.com/online-judge-tools/verification-helper">online-judge-tools/verification-helper</a>.{% endif %}
-
-## Library Files
-
-<div id="363ccddc87d476ad5f91d9ca39d24df0"></div>
-
-### cpl
-
-* :heavy_check_mark: <a href="library/cpl/__init__.py.html">cpl/__init__.py</a>
-
-
-<div id="73cd78cad8ef8a4132616770a881e8da"></div>
-
-### cpl/combinatronics
-
-* :heavy_check_mark: <a href="library/cpl/combinatronics/enumerator.py.html">cpl/combinatronics/enumerator.py</a>
-
-
-<div id="f94502e0ae6d80fbe0c13df140a5b263"></div>
-
-### cpl/data_structure
-
-* :heavy_check_mark: <a href="library/cpl/data_structure/dsu.py.html">cpl/data_structure/dsu.py</a>
-
-
-<div id="05f98b83664ba3f3f99f8f8001fd60c2"></div>
-
-### cpl/graph
-
-* :warning: <a href="library/cpl/graph/__init__.py.html">cpl/graph/__init__.py</a>
-* :heavy_check_mark: <a href="library/cpl/graph/bellman_ford.py.html">cpl/graph/bellman_ford.py</a>
-* :heavy_check_mark: <a href="library/cpl/graph/dijkstra.py.html">cpl/graph/dijkstra.py</a>
-* :heavy_check_mark: <a href="library/cpl/graph/floyd_warshall.py.html">cpl/graph/floyd_warshall.py</a>
-* :heavy_check_mark: <a href="library/cpl/graph/mst_kruskal.py.html">cpl/graph/mst_kruskal.py</a>
-
-
-<div id="9145fcf955804ae7e9b4d105b4a823e6"></div>
-
-### cpl/math
-
-* :heavy_check_mark: <a href="library/cpl/math/floor_sum.py.html">cpl/math/floor_sum.py</a>
-
-
-<div id="7cadb34dd2b4e5dcd6ed1a15dda70c08"></div>
-
-### cpl/sample
-
-* :heavy_check_mark: <a href="library/cpl/sample/aplusb.py.html">cpl/sample/aplusb.py</a>
-
-
-## Verify Files
-
-* :heavy_check_mark: <a href="verify/test/aoj/DPL_5_B.test.py.html">test/aoj/DPL_5_B.test.py</a>
-* :heavy_check_mark: <a href="verify/test/aoj/DPL_5_D.test.py.html">test/aoj/DPL_5_D.test.py</a>
-* :heavy_check_mark: <a href="verify/test/aoj/DPL_5_E.test.py.html">test/aoj/DPL_5_E.test.py</a>
-* :heavy_check_mark: <a href="verify/test/aoj/GRL_1_A.test.py.html">test/aoj/GRL_1_A.test.py</a>
-* :heavy_check_mark: <a href="verify/test/aoj/GRL_1_B.test.py.html">test/aoj/GRL_1_B.test.py</a>
-* :heavy_check_mark: <a href="verify/test/aoj/GRL_1_C.test.py.html">test/aoj/GRL_1_C.test.py</a>
-* :heavy_check_mark: <a href="verify/test/aoj/GRL_2_A.test.py.html">test/aoj/GRL_2_A.test.py</a>
-* :heavy_check_mark: <a href="verify/test/yosupo/aplusb.test.py.html">test/yosupo/aplusb.test.py</a>
-* :heavy_check_mark: <a href="verify/test/yosupo/many_aplusb.test.py.html">test/yosupo/many_aplusb.test.py</a>
-* :heavy_check_mark: <a href="verify/test/yosupo/shortest_path.test.py.html">test/yosupo/shortest_path.test.py</a>
-* :heavy_check_mark: <a href="verify/test/yosupo/sum_of_floor_of_linear.test.py.html">test/yosupo/sum_of_floor_of_linear.test.py</a>
-* :heavy_check_mark: <a href="verify/test/yosupo/unionfind.test.py.html">test/yosupo/unionfind.test.py</a>
-
-
