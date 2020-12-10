@@ -14,15 +14,15 @@ data:
   code: ''
   dependsOn: []
   isVerificationFile: false
-  path: cpl/sample/__init__.py
+  path: cpl/algorithm/__init__.py
   requiredBy: []
-  timestamp: '2020-11-08 20:04:06+09:00'
+  timestamp: '2020-12-10 11:25:17+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: cpl/sample/__init__.py
+documentation_of: cpl/algorithm/__init__.py
 layout: document
 redirect_from:
-- /library/cpl/sample/__init__.py
-- /library/cpl/sample/__init__.py.html
-title: cpl/sample/__init__.py
+- /library/cpl/algorithm/__init__.py
+- /library/cpl/algorithm/__init__.py.html
+title: cpl/algorithm/__init__.py
 ---

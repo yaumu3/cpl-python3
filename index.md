@@ -6,6 +6,14 @@ data:
     - icon: ':heavy_check_mark:'
       path: cpl/__init__.py
       title: cpl/__init__.py
+  - name: cpl/algorithm
+    pages:
+    - icon: ':warning:'
+      path: cpl/algorithm/__init__.py
+      title: cpl/algorithm/__init__.py
+    - icon: ':heavy_check_mark:'
+      path: cpl/algorithm/binary_search.py
+      title: cpl/algorithm/binary_search.py
   - name: cpl/combinatronics
     pages:
     - icon: ':warning:'
@@ -81,6 +89,9 @@ data:
   verificationCategories:
   - name: test/aoj
     pages:
+    - icon: ':heavy_check_mark:'
+      path: test/aoj/ALDS1_4_D.test.py
+      title: test/aoj/ALDS1_4_D.test.py
     - icon: ':heavy_check_mark:'
       path: test/aoj/CGL_4_A.test.py
       title: test/aoj/CGL_4_A.test.py

@@ -15,7 +15,7 @@ data:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.9.0/x64/lib/python3.9/site-packages/onlinejudge_verify/documentation/build.py\"\
     , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
-    \ basedir=basedir).decode()\n  File \"/opt/hostedtoolcache/Python/3.9.0/x64/lib/python3.9/site-packages/onlinejudge_verify/languages/python.py\"\
+    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n  File \"/opt/hostedtoolcache/Python/3.9.0/x64/lib/python3.9/site-packages/onlinejudge_verify/languages/python.py\"\
     , line 85, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "from heapq import heappop, heappush\nfrom typing import List, Tuple\n\nfrom\
     \ cpl import INF\nfrom cpl.graph import WeightedAdjList\n\n\nclass Dijkstra:\n\
@@ -38,8 +38,8 @@ data:
   timestamp: '1970-01-01 00:00:00+00:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/aoj/GRL_1_A.test.py
   - test/yosupo/shortest_path.test.py
+  - test/aoj/GRL_1_A.test.py
 documentation_of: cpl/graph/dijkstra.py
 layout: document
 redirect_from:

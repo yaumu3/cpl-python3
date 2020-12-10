@@ -17,7 +17,7 @@ data:
     - https://judge.yosupo.jp/problem/shortest_path
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.9.0/x64/lib/python3.9/site-packages/onlinejudge_verify/documentation/build.py\"\
     , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
-    \ basedir=basedir).decode()\n  File \"/opt/hostedtoolcache/Python/3.9.0/x64/lib/python3.9/site-packages/onlinejudge_verify/languages/python.py\"\
+    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n  File \"/opt/hostedtoolcache/Python/3.9.0/x64/lib/python3.9/site-packages/onlinejudge_verify/languages/python.py\"\
     , line 85, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "# verify-helper: PROBLEM https://judge.yosupo.jp/problem/shortest_path\n\
     from cpl import INF, pairwise\nfrom cpl.graph.dijkstra import Dijkstra\n\n\ndef\
@@ -28,8 +28,8 @@ data:
     \    print(mc, len(path) - 1)\n    for u, v in pairwise(path):\n        print(u,\
     \ v)\n\n\nif __name__ == \"__main__\":\n    main()\n"
   dependsOn:
-  - cpl/__init__.py
   - cpl/graph/dijkstra.py
+  - cpl/__init__.py
   isVerificationFile: true
   path: test/yosupo/shortest_path.test.py
   requiredBy: []

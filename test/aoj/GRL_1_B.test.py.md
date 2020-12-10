@@ -17,7 +17,7 @@ data:
     - https://onlinejudge.u-aizu.ac.jp/courses/library/5/GRL/1/GRL_1_B
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.9.0/x64/lib/python3.9/site-packages/onlinejudge_verify/documentation/build.py\"\
     , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
-    \ basedir=basedir).decode()\n  File \"/opt/hostedtoolcache/Python/3.9.0/x64/lib/python3.9/site-packages/onlinejudge_verify/languages/python.py\"\
+    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n  File \"/opt/hostedtoolcache/Python/3.9.0/x64/lib/python3.9/site-packages/onlinejudge_verify/languages/python.py\"\
     , line 85, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "# noqa: E501 # verify-helper: PROBLEM https://onlinejudge.u-aizu.ac.jp/courses/library/5/GRL/1/GRL_1_B\n\
     from cpl import INF\nfrom cpl.graph.bellman_ford import bellman_ford\n\n\ndef\
@@ -27,8 +27,8 @@ data:
     \        print(\"\\n\".join(map(str, cost)).replace(str(INF), \"INF\"))\n    else:\n\
     \        print(\"NEGATIVE CYCLE\")\n\n\nif __name__ == \"__main__\":\n    main()\n"
   dependsOn:
-  - cpl/__init__.py
   - cpl/graph/bellman_ford.py
+  - cpl/__init__.py
   isVerificationFile: true
   path: test/aoj/GRL_1_B.test.py
   requiredBy: []
