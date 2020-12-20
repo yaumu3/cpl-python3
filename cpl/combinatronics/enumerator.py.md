@@ -16,9 +16,9 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
-  bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.9.0/x64/lib/python3.9/site-packages/onlinejudge_verify/documentation/build.py\"\
+  bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.9.1/x64/lib/python3.9/site-packages/onlinejudge_verify/documentation/build.py\"\
     , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
-    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n  File \"/opt/hostedtoolcache/Python/3.9.0/x64/lib/python3.9/site-packages/onlinejudge_verify/languages/python.py\"\
+    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n  File \"/opt/hostedtoolcache/Python/3.9.1/x64/lib/python3.9/site-packages/onlinejudge_verify/languages/python.py\"\
     , line 85, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "class Enumerator:\n    def __init__(self, N: int, MOD: int) -> None:\n  \
     \      self.fact = [1, 1]\n        self.finv = [1, 1]\n        self.invs = [0,\
@@ -39,9 +39,9 @@ data:
   timestamp: '2020-09-13 19:20:22+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/aoj/DPL_5_D.test.py
   - test/aoj/DPL_5_B.test.py
   - test/aoj/DPL_5_E.test.py
+  - test/aoj/DPL_5_D.test.py
 documentation_of: cpl/combinatronics/enumerator.py
 layout: document
 redirect_from:
