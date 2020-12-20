@@ -27,10 +27,16 @@ class DSU:
 
     def leader(self, a: int) -> int:
         assert 0 <= a < self._n
-        if self.parent_or_size[a] < 0:
-            return a
-        self.parent_or_size[a] = self.leader(self.parent_or_size[a])
-        return self.parent_or_size[a]
+        parent = self.parent_or_size[a]
+        while parent >= 0:
+            if self.parent_or_size[parent] < 0:
+                return parent
+            self.parent_or_size[a], a, parent = (
+                self.parent_or_size[parent],
+                self.parent_or_size[parent],
+                self.parent_or_size[self.parent_or_size[parent]],
+            )
+        return a
 
     def size(self, a: int) -> int:
         assert 0 <= a < self._n
