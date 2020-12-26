@@ -30,8 +30,8 @@ data:
     \ \".join(map(str, row)).replace(str(INF), \"INF\")) for row in dist]\n\n\nif\
     \ __name__ == \"__main__\":\n    main()\n"
   dependsOn:
-  - cpl/__init__.py
   - cpl/graph/floyd_warshall.py
+  - cpl/__init__.py
   isVerificationFile: true
   path: test/aoj/GRL_1_C.test.py
   requiredBy: []

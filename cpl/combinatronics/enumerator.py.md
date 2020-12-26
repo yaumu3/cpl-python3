@@ -6,14 +6,14 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/aoj/DPL_5_B.test.py
     title: test/aoj/DPL_5_B.test.py
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/aoj/DPL_5_D.test.py
     title: test/aoj/DPL_5_D.test.py
   - icon: ':heavy_check_mark:'
     path: test/aoj/DPL_5_E.test.py
     title: test/aoj/DPL_5_E.test.py
   _pathExtension: py
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.9.1/x64/lib/python3.9/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -31,13 +31,13 @@ data:
     \ n: int, k: int) -> int:\n        if n < k or n < 0 or k < 0:\n            return\
     \ 0\n        assert n <= self._N and k <= self._N\n        return self.fact[n]\
     \ * self.finv[n - k] % self._MOD\n\n    def choose_with_duplicates(self, n: int,\
-    \ k: int) -> int:\n        return self.choose(n + k - 1, n)\n"
+    \ k: int) -> int:\n        return self.choose(n + k - 1, k)\n"
   dependsOn: []
   isVerificationFile: false
   path: cpl/combinatronics/enumerator.py
   requiredBy: []
-  timestamp: '2020-09-13 19:20:22+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  timestamp: '2020-12-26 22:10:12+09:00'
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/aoj/DPL_5_B.test.py
   - test/aoj/DPL_5_E.test.py

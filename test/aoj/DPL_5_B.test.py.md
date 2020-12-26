@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: cpl/combinatronics/enumerator.py
     title: cpl/combinatronics/enumerator.py
   _extendedRequiredBy: []
@@ -25,7 +25,7 @@ data:
   isVerificationFile: true
   path: test/aoj/DPL_5_B.test.py
   requiredBy: []
-  timestamp: '2020-09-13 19:20:22+09:00'
+  timestamp: '2020-12-26 22:10:12+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/aoj/DPL_5_B.test.py

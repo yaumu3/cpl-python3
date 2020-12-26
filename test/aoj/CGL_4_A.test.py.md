@@ -28,8 +28,8 @@ data:
     \ ch[s:] + ch[:s]\n    print(N)\n    [print(p.x, p.y) for p in ch]\n\n\nif __name__\
     \ == \"__main__\":\n    main()\n"
   dependsOn:
-  - cpl/geometry/convex_hull.py
   - cpl/geometry/__init__.py
+  - cpl/geometry/convex_hull.py
   isVerificationFile: true
   path: test/aoj/CGL_4_A.test.py
   requiredBy: []
