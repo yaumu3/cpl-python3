@@ -23,4 +23,4 @@ class Enumerator:
         return self.fact[n] * self.finv[n - k] % self._MOD
 
     def choose_with_duplicates(self, n: int, k: int) -> int:
-        return self.choose(n + k - 1, n)
+        return self.choose(n + k - 1, k)
