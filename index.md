@@ -30,6 +30,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: cpl/data_structure/dsu.py
       title: cpl/data_structure/dsu.py
+  - name: cpl/dp
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: cpl/dp/lcs.py
+      title: cpl/dp/lcs.py
   - name: cpl/geometry
     pages:
     - icon: ':heavy_check_mark:'
@@ -89,6 +94,9 @@ data:
   verificationCategories:
   - name: test/aoj
     pages:
+    - icon: ':heavy_check_mark:'
+      path: test/aoj/ALDS1_10_C.test.py
+      title: test/aoj/ALDS1_10_C.test.py
     - icon: ':heavy_check_mark:'
       path: test/aoj/ALDS1_4_D.test.py
       title: test/aoj/ALDS1_4_D.test.py
