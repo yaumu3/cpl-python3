@@ -6,14 +6,14 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/aoj/DPL_5_B.test.py
     title: test/aoj/DPL_5_B.test.py
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/aoj/DPL_5_D.test.py
     title: test/aoj/DPL_5_D.test.py
   - icon: ':heavy_check_mark:'
     path: test/aoj/DPL_5_E.test.py
     title: test/aoj/DPL_5_E.test.py
   _pathExtension: py
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.9.1/x64/lib/python3.9/site-packages/onlinejudge_verify/documentation/build.py\"\
@@ -37,7 +37,7 @@ data:
   path: cpl/combinatronics/enumerator.py
   requiredBy: []
   timestamp: '2020-12-26 22:10:12+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/aoj/DPL_5_B.test.py
   - test/aoj/DPL_5_E.test.py

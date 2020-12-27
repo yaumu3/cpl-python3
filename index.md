@@ -19,7 +19,7 @@ data:
     - icon: ':warning:'
       path: cpl/combinatronics/__init__.py
       title: cpl/combinatronics/__init__.py
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: cpl/combinatronics/enumerator.py
       title: cpl/combinatronics/enumerator.py
   - name: cpl/data_structure
@@ -98,7 +98,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/aoj/DPL_5_B.test.py
       title: test/aoj/DPL_5_B.test.py
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/aoj/DPL_5_D.test.py
       title: test/aoj/DPL_5_D.test.py
     - icon: ':heavy_check_mark:'

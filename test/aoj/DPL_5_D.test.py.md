@@ -1,13 +1,13 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: cpl/combinatronics/enumerator.py
     title: cpl/combinatronics/enumerator.py
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _pathExtension: py
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/library/7/DPL/5/DPL_5_D
     links:
@@ -19,15 +19,15 @@ data:
   code: "# noqa: E501 # verify-helper: PROBLEM https://onlinejudge.u-aizu.ac.jp/courses/library/7/DPL/5/DPL_5_D\n\
     from cpl.combinatronics.enumerator import Enumerator\n\n\ndef main() -> None:\n\
     \    n, k = map(int, input().split())\n    e = Enumerator(n + k, 1_000_000_007)\n\
-    \    print(e.choose_with_duplicates(n, k))\n\n\nif __name__ == \"__main__\":\n\
+    \    print(e.choose_with_duplicates(k, n))\n\n\nif __name__ == \"__main__\":\n\
     \    main()\n"
   dependsOn:
   - cpl/combinatronics/enumerator.py
   isVerificationFile: true
   path: test/aoj/DPL_5_D.test.py
   requiredBy: []
-  timestamp: '2020-12-26 22:10:12+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2020-12-27 18:08:38+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/aoj/DPL_5_D.test.py
 layout: document
