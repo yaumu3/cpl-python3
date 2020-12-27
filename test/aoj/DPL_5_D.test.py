@@ -5,7 +5,7 @@ from cpl.combinatronics.enumerator import Enumerator
 def main() -> None:
     n, k = map(int, input().split())
     e = Enumerator(n + k, 1_000_000_007)
-    print(e.choose_with_duplicates(n, k))
+    print(e.choose_with_duplicates(k, n))
 
 
 if __name__ == "__main__":
