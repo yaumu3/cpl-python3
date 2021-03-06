@@ -100,6 +100,11 @@ data:
     - icon: ':warning:'
       path: test/yosupo/__init__.py
       title: test/yosupo/__init__.py
+  - name: test/yukicoder
+    pages:
+    - icon: ':warning:'
+      path: test/yukicoder/__init__.py
+      title: test/yukicoder/__init__.py
   verificationCategories:
   - name: test/aoj
     pages:
@@ -156,5 +161,10 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/yosupo/unionfind.test.py
       title: test/yosupo/unionfind.test.py
+  - name: test/yukicoder
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: test/yukicoder/1006.test.py
+      title: test/yukicoder/1006.test.py
 layout: toppage
 ---

@@ -26,11 +26,11 @@ data:
     \                for j in range(i * i, n + 1, i):\n                    if self.spf[j]\
     \ == j:\n                        self.spf[j] = i\n\n    def is_prime(self, x:\
     \ int) -> bool:\n        assert x < len(self.spf)\n        return self.spf[x]\
-    \ == x\n\n    def __traverse(self, x: int) -> List[int]:\n        if self.spf[x]\
-    \ == x:\n            return [x]\n        nxt = x // self.spf[x]\n        return\
-    \ self.__traverse(nxt) + [self.spf[x]]\n\n    def factor(self, x: int) -> List[int]:\n\
-    \        assert x < len(self.spf)\n        if x < 2:\n            return []\n\
-    \        return self.__traverse(x)\n"
+    \ == x\n\n    def factor(self, x: int) -> List[int]:\n        assert x < len(self.spf)\n\
+    \        if x < 2:\n            return []\n        res = []\n        while True:\n\
+    \            if self.is_prime(x):\n                res.append(x)\n           \
+    \     break\n            res.append(self.spf[x])\n            x //= self.spf[x]\n\
+    \        return res\n"
   dependsOn: []
   isVerificationFile: false
   path: cpl/math/prime_factorization_query.py
