@@ -29,14 +29,15 @@ class SmallestPrimeFactors:
         assert x < len(self.spf)
         return self.spf[x] == x
 
-    def __traverse(self, x: int) -> List[int]:
-        if self.spf[x] == x:
-            return [x]
-        nxt = x // self.spf[x]
-        return self.__traverse(nxt) + [self.spf[x]]
-
     def factor(self, x: int) -> List[int]:
         assert x < len(self.spf)
         if x < 2:
             return []
-        return self.__traverse(x)
+        res = []
+        while True:
+            if self.is_prime(x):
+                res.append(x)
+                break
+            res.append(self.spf[x])
+            x //= self.spf[x]
+        return res
