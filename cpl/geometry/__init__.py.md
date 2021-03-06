@@ -1,22 +1,17 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy:
-  - icon: ':heavy_check_mark:'
-    path: cpl/geometry/convex_hull.py
-    title: cpl/geometry/convex_hull.py
-  _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: test/aoj/CGL_4_A.test.py
-    title: test/aoj/CGL_4_A.test.py
+  _extendedRequiredBy: []
+  _extendedVerifiedWith: []
+  _isVerificationFailed: false
   _pathExtension: py
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.9.1/x64/lib/python3.9/site-packages/onlinejudge_verify/documentation/build.py\"\
+  bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.9.2/x64/lib/python3.9/site-packages/onlinejudge_verify/documentation/build.py\"\
     , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
-    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n  File \"/opt/hostedtoolcache/Python/3.9.1/x64/lib/python3.9/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 85, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n  File \"/opt/hostedtoolcache/Python/3.9.2/x64/lib/python3.9/site-packages/onlinejudge_verify/languages/python.py\"\
+    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "from math import sqrt\nfrom typing import List\n\nPolygon = List[\"Point\"\
     ]\n\n\nclass Point:\n    EPS = 1e-10\n\n    def __init__(self, x: float, y: float):\n\
     \        self.x = x\n        self.y = y\n\n    def __repr__(self):\n        return\
@@ -34,12 +29,10 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: cpl/geometry/__init__.py
-  requiredBy:
-  - cpl/geometry/convex_hull.py
+  requiredBy: []
   timestamp: '1970-01-01 00:00:00+00:00'
-  verificationStatus: LIBRARY_ALL_AC
-  verifiedWith:
-  - test/aoj/CGL_4_A.test.py
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
 documentation_of: cpl/geometry/__init__.py
 layout: document
 redirect_from:

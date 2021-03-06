@@ -6,14 +6,15 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/yosupo/sum_of_floor_of_linear.test.py
     title: test/yosupo/sum_of_floor_of_linear.test.py
+  _isVerificationFailed: false
   _pathExtension: py
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
-  bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.9.1/x64/lib/python3.9/site-packages/onlinejudge_verify/documentation/build.py\"\
+  bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.9.2/x64/lib/python3.9/site-packages/onlinejudge_verify/documentation/build.py\"\
     , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
-    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n  File \"/opt/hostedtoolcache/Python/3.9.1/x64/lib/python3.9/site-packages/onlinejudge_verify/languages/python.py\"\
-    , line 85, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
+    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n  File \"/opt/hostedtoolcache/Python/3.9.2/x64/lib/python3.9/site-packages/onlinejudge_verify/languages/python.py\"\
+    , line 96, in bundle\n    raise NotImplementedError\nNotImplementedError\n"
   code: "def floor_sum(n: int, m: int, a: int, b: int) -> int:\n    ans: int = 0\n\
     \    if a >= m:\n        ans += (n - 1) * n * (a // m) // 2\n        a %= m\n\
     \    if b >= m:\n        ans += n * (b // m)\n        b %= m\n\n    y_max: int\

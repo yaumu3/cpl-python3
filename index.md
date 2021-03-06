@@ -3,7 +3,7 @@ data:
   libraryCategories:
   - name: cpl
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':warning:'
       path: cpl/__init__.py
       title: cpl/__init__.py
   - name: cpl/algorithm
@@ -11,7 +11,7 @@ data:
     - icon: ':warning:'
       path: cpl/algorithm/__init__.py
       title: cpl/algorithm/__init__.py
-    - icon: ':heavy_check_mark:'
+    - icon: ':warning:'
       path: cpl/algorithm/binary_search.py
       title: cpl/algorithm/binary_search.py
   - name: cpl/combinatronics
@@ -27,20 +27,20 @@ data:
     - icon: ':warning:'
       path: cpl/data_structure/__init__.py
       title: cpl/data_structure/__init__.py
-    - icon: ':heavy_check_mark:'
+    - icon: ':warning:'
       path: cpl/data_structure/dsu.py
       title: cpl/data_structure/dsu.py
   - name: cpl/dp
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':warning:'
       path: cpl/dp/lcs.py
       title: cpl/dp/lcs.py
   - name: cpl/geometry
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':warning:'
       path: cpl/geometry/__init__.py
       title: cpl/geometry/__init__.py
-    - icon: ':heavy_check_mark:'
+    - icon: ':warning:'
       path: cpl/geometry/convex_hull.py
       title: cpl/geometry/convex_hull.py
   - name: cpl/graph
@@ -48,16 +48,16 @@ data:
     - icon: ':warning:'
       path: cpl/graph/__init__.py
       title: cpl/graph/__init__.py
-    - icon: ':heavy_check_mark:'
+    - icon: ':warning:'
       path: cpl/graph/bellman_ford.py
       title: cpl/graph/bellman_ford.py
-    - icon: ':heavy_check_mark:'
+    - icon: ':warning:'
       path: cpl/graph/dijkstra.py
       title: cpl/graph/dijkstra.py
-    - icon: ':heavy_check_mark:'
+    - icon: ':warning:'
       path: cpl/graph/floyd_warshall.py
       title: cpl/graph/floyd_warshall.py
-    - icon: ':heavy_check_mark:'
+    - icon: ':warning:'
       path: cpl/graph/mst_kruskal.py
       title: cpl/graph/mst_kruskal.py
   - name: cpl/math
@@ -65,6 +65,9 @@ data:
     - icon: ':warning:'
       path: cpl/math/__init__.py
       title: cpl/math/__init__.py
+    - icon: ':warning:'
+      path: cpl/math/ext_gcd.py
+      title: cpl/math/ext_gcd.py
     - icon: ':heavy_check_mark:'
       path: cpl/math/floor_sum.py
       title: cpl/math/floor_sum.py
@@ -124,6 +127,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/aoj/GRL_2_A.test.py
       title: test/aoj/GRL_2_A.test.py
+    - icon: ':heavy_check_mark:'
+      path: test/aoj/NTL_1_E.test.py
+      title: test/aoj/NTL_1_E.test.py
   - name: test/yosupo
     pages:
     - icon: ':heavy_check_mark:'
