@@ -71,6 +71,12 @@ data:
     - icon: ':heavy_check_mark:'
       path: cpl/math/floor_sum.py
       title: cpl/math/floor_sum.py
+    - icon: ':warning:'
+      path: cpl/math/prime_factorization.py
+      title: cpl/math/prime_factorization.py
+    - icon: ':warning:'
+      path: cpl/math/prime_factorization_query.py
+      title: cpl/math/prime_factorization_query.py
   - name: cpl/sample
     pages:
     - icon: ':warning:'
@@ -127,6 +133,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/aoj/GRL_2_A.test.py
       title: test/aoj/GRL_2_A.test.py
+    - icon: ':heavy_check_mark:'
+      path: test/aoj/NTL_1_A.test.py
+      title: test/aoj/NTL_1_A.test.py
     - icon: ':heavy_check_mark:'
       path: test/aoj/NTL_1_E.test.py
       title: test/aoj/NTL_1_E.test.py
